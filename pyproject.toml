@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "purepytessel"
+version = "0.1.0"
+description = "Pure Python implementation of marching cubes and marching tetrahedra"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+authors = [
+    { name = "Ivo Filot" }
+]
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy>=1.20",
+    "numba>=0.57",
+]
+
+keywords = [
+    "isosurface",
+    "marching cubes",
+    "marching tetrahedra",
+    "mesh",
+    "geometry",
+    "scientific computing",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+[project.urls]
+Homepage = "https://github.com/ifilot/purepytessel"
+Repository = "https://github.com/ifilot/purepytessel"
+Issues = "https://github.com/ifilot/purepytessel/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
