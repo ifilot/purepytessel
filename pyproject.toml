@@ -14,7 +14,7 @@ authors = [
 requires-python = ">=3.9"
 
 dependencies = [
-    "numpy>=1.20",
+    "numpy>=1.26",
     "numba>=0.57",
 ]
 
